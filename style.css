@@ -848,6 +848,21 @@ body {
     filter: brightness(1.1);
 }
 
+.polaroid-wrapper-single {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.polaroid-portrait {
+    max-width: 250px;
+    width: 80%;
+}
+
+.polaroid-portrait img {
+    aspect-ratio: 9 / 16;
+}
+
 /* =========================================
    KUNCI ANIMASI MENGAMBANG FOTO
 ========================================= */

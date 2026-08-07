@@ -424,7 +424,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // C. JIKA YANG DIKLIK ADALAH POLAROID
                 else if (this.classList.contains('polaroid')) {
                     modalImg.src = this.querySelector('img').src;
-                    modalImg.style.aspectRatio = "1 / 1";
+                    if (this.classList.contains('polaroid-portrait')) {
+                        modalImg.style.aspectRatio = "9 / 16";
+                    } else {
+                        modalImg.style.aspectRatio = "1 / 1";
+                    }
                 }
                 // D. JIKA YANG DIKLIK ADALAH GALERI CINTA
                 else {
